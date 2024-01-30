@@ -2,7 +2,7 @@
 
 * Студент: [Марат Замалетдинов](https://up.htmlacademy.ru/htmlcss/39/user/2410523).
 * Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
-
+* Сайт: [Мой проект](https://zamlet97.github.io/2410523-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
