@@ -11,7 +11,7 @@
           <img class="logo" src="#" alt="Логотип Седона">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-item-link link-color" href="#">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-item-link active-color" href="#">Главная</a></li>
           <li class="navigation-item"><a class="navigation-item-link" href="#">О Седоне </a></li>
           <li class="navigation-item"><a class="navigation-item-link" href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -35,7 +35,9 @@
     <main class="index-main">
       <section class="main-welcom">
         <h1 class="visually-hidden">Отдых в Аризоне в небольшом городке Седона</h1>
-        <img class="hero" src="#" alt="Горы в Аризоне">
+        <img class="hero" src="#" alt="Добро пожаловать в Седону">
+      </section>
+      <section class="main-intro">
         <p><strong>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</strong></p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
@@ -43,11 +45,11 @@
         <h2 class="visually-hidden"> Преимущества в городке Седона</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <img class="city" src="#" alt="Улица в Седоне">
-          </li>
-          <li class="advantages-item">
             <h3>Настоящий городок</h3>
             <p>Cедона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li class="advantages-item">
+            <img class="city" src="#" alt="Улица в Седоне">
           </li>
           <li class="advantages-item">
             <h3>Небольшая площадь</h3>
@@ -62,11 +64,11 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img class="canyon" src="#" alt="Каньон в Аризоне">
           </li>
           <li class="advantages-item">
-            <img class="canyon" src="#" alt="Каньон в Аризоне">
+            <h3>Там есть мост дьявола</h3>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
       </section>
@@ -88,14 +90,15 @@
       <section class="search-hotel">
         <h2>Заинтерсовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="hotel-list" type="submit">Поиск Гостиницы в Седоне</button>
+        <button class="hotel-list" type="button">Поиск Гостиницы в Седоне</button>
       </section>
       <section class="mail">
         <h2>Подпишись на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="mail-spam" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" id="mail-your" name="email" placeholder="Ваш e-mail">
-          <button class="spam-button">Подписаться</button>
+          <input type="email" id="mail-your" name="email" placeholder="Ваш e-mail" id="spam">
+            <label class="visually-hidden" for="spam"> Подписаться на рассылку</label>
+          <button class="spam-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -115,7 +118,9 @@
         </li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <img class="logo-html-academy" src="#" alt="Логотип htmlacademy">
+      <a class="logo-academy-link" href="https://htmlacademy.ru">
+        <img class="logo-html-academy" src="#" alt="Логотип htmlacademy">
+      </a>
     </footer>
   </body>
 </html>
