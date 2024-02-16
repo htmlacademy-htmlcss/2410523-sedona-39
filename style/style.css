@@ -15,35 +15,245 @@
 }
 
 body {
-  font-family:"PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
 }
 
 .header-main {
-color: #000000;
-background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .navigation-item-link {
-color: #000000;
-font-family: "PT Sans", sans-serif;
-font-weight: 700;
-line-height: 24px;
-font-size: 20px;
-text-decoration: none;
-text-align: center;
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+
 }
 
-.link-button a  {
+
+.link-button a {
   background-color: #756157;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 .index-main {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-welcom {
+  background-color: #000000;
   background-image: url(../images/background/mountains.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+}
 
+
+.main-intro {
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+.main-intro-title {
+  text-transform: uppercase;
+  line-height: 36px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main-intro p {
+  text-align: center;
+  line-height: 26px;
+  font-size: 22px;
+
+}
+
+.advantages {
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.advantages-title {
+  line-height: 28px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.advantages-item:nth-child(1) {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: rgba(0, 0, 0, 1);
+}
+
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+  color: rgba(0, 0, 0, 1);
+}
+
+.advantages-item:nth-child(5) {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: rgba(0, 0, 0, 1);
+}
+
+.advantages-item:nth-child(7) {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(0, 0, 0, 1);
+}
+
+.comfort {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  line-height: 21px;
+  font-size: 18px;
+
+
+}
+
+.comfort h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.comfort-promo {
+  line-height: 26px;
+  font-size: 22px;
+}
+
+.comfort-title {
+  line-height: 24px;
+  font-size: 28px;
+  color: #000000;
+}
+
+.comfort-item:nth-child(1) {
+  background-color:rgba(131, 179, 211, 0.12);
+  color: #333333;
+  background-image: url(../images/icons/hotels.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.comfort-item:nth-child(2) {
+  background-image: url(../images/icons/food.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color:#ffffff;
+  color: #333333;
+}
+
+.comfort-item:nth-child(3) {
+  background-color:rgba(131, 179, 211, 0.12);
+  color: #333333;
+  background-image: url(../images/icons/gift.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.search-hotel {
+  background-color: #ffffff;
+  color:#333333;
+  text-align: center;
+  line-height: 26px;
+  font-size: 22px;
+
+}
+
+.search-hotel h2 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hotel-button {
+  background-color: #756157;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.mail {
+  background-image: url(../images/background/back-canyon.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  color: #ffffff;
+  background-color: #000000;
+  line-height: 26px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.mail h2 {
+  line-height: 36px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.email {
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+}
+
+.spam-button {
+  background-color:#82B3D3 ;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.footer-contacts {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+
+}
+
+.social-item {
+  background-color: #ffffff;
+  color: #000000;
+  background-repeat: no-repeat;
+}
+
+.social-item:nth-child(1) {
+  background-image: url(../images/icons/vk.svg);
+}
+
+.social-item:nth-child(2) {
+  background-image: url(../images/icons/telegram.svg);
+}
+
+.social-item:nth-child(3) {
+  background-image: url(../images/icons/youtube.svg);
+}
+
+.phone {
+  text-decoration: none;
+  color:#000000;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.social-item-link {
+  text-decoration: none;
 }
