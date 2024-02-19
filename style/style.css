@@ -346,8 +346,139 @@ body {
       text-transform: uppercase;
       color: #ffffff;
       text-align: center;
-      background-color:
-      border-style: none;
       border-radius: 4px;
-
     }
+    .found-hotel {
+      background-color:#ffffff;
+      color: #000000;
+    }
+
+    .found-hotel-title {
+      line-height: 36px;
+      font-size: 30px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+
+    .pin {
+      background-image: url(../images/icons/pin.svg);
+      background-repeat: no-repeat;
+      border-radius: 4px;
+      border: 2px solid black;
+    }
+
+    .list {
+      background-image: url(../images/icons/list.svg);
+      background-repeat: no-repeat;
+      border-radius: 4px;
+      border: 2px solid #e5e5e5;
+    }
+
+    .content {
+      background-repeat: no-repeat;
+      background-image: url(../images/icons/content.svg);
+      border-radius: 4px;
+      border: 2px solid #e5e5e5;
+    }
+
+    .title-link {
+      line-height: 28px;
+      font-size: 24px;
+      text-decoration: none;
+      color: #000000;
+    }
+     .price {
+      text-align: right;
+     }
+
+
+     .detail {
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 20px;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      background-color: #756157;
+      border-radius: 4px;
+      text-decoration: none;
+     }
+
+     .favorites {
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 20px;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      background-color: #82B3D3;
+      border-radius: 4px;
+      text-decoration: none;
+      border-style: none;
+     }
+
+     .green {
+      background-color: #7DB54F;
+     }
+
+      .raiting {
+      line-height: 20px;
+      font-size: 16px;
+      color: #333333;
+      text-align: center;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      text-decoration: none;
+      border-style: none;
+      }
+
+      .four-stars {
+        background-image: url(../images/icons/4-stars.svg);
+        background-repeat: no-repeat;
+      }
+
+      .tree-stars {
+        background-image: url(../images/icons/3-stars.svg);
+        background-repeat: no-repeat;
+      }
+
+      .two-stars {
+        background-image: url(../images/icons/2-stars.svg);
+        background-repeat: no-repeat;
+      }
+
+      .page-list {
+        list-style: none;
+      }
+
+      .page-link {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        text-align: center;
+        background-color: #82B3D3;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+
+      .page-current {
+        color: #000000;
+        background-color: #F2F2F2;
+      }
+
+      .mail-catalog {
+        background-image: none;
+        background-color: #ffffff;
+        color: #000000;
+
+      }
+
+      .mail-catalog p {
+        color: #333333;
+      }
+
+      .mail-catalog .spam-button {
+        border-style: none;
+        color: #ffffff;
+      }
