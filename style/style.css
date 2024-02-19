@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff;
+  color: #000000;
   background-color: #82B3D5;
 }
 
@@ -54,6 +54,7 @@ body {
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
+  font-family: inherit;
 }
 
 .index-main {
@@ -82,7 +83,7 @@ body {
   text-align: center;
 }
 
-.main-intro p {
+.main-intro-text {
   text-align: center;
   line-height: 26px;
   font-size: 22px;
@@ -213,6 +214,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  font-family: inherit;
 }
 .mail {
   background-image: url(../images/background/back-canyon.jpg);
@@ -244,6 +246,9 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  font-family: inherit;
+  border-style: none;
+  color: #ffffff;
 }
 
 .footer-contacts {
@@ -337,6 +342,7 @@ body {
       border-style: none;
       border-radius: 4px;
       text-align: center;
+      font-family: inherit;
     }
 
     .off-buttom {
@@ -347,6 +353,7 @@ body {
       color: #ffffff;
       text-align: center;
       border-radius: 4px;
+      font-family: inherit;
     }
     .found-hotel {
       background-color:#ffffff;
@@ -358,6 +365,16 @@ body {
       font-size: 30px;
       text-transform: uppercase;
       color: #333333;
+    }
+
+    .soting {
+      font-family: inherit;
+      color: #333333;
+      background-color: #ffffff;
+      line-height: 21px;
+      font-size: 18px;
+      font-weight: 400;
+
     }
 
     .pin {
@@ -402,6 +419,7 @@ body {
       background-color: #756157;
       border-radius: 4px;
       text-decoration: none;
+      font-family: inherit;
      }
 
      .favorites {
@@ -415,6 +433,7 @@ body {
       border-radius: 4px;
       text-decoration: none;
       border-style: none;
+      font-family: inherit;
      }
 
      .green {
@@ -460,6 +479,7 @@ body {
         color: #ffffff;
         text-decoration: none;
         border-radius: 4px;
+        font-family: inherit;
       }
 
       .page-current {
