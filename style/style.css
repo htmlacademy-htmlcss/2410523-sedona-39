@@ -18,13 +18,17 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #82B3D5;
 }
 
 .header-main {
   color: #000000;
   background-color: #ffffff;
+}
+
+.navigation-list {
+  list-style-type: none;
 }
 
 .navigation-item-link {
@@ -37,11 +41,19 @@ body {
 
 }
 
+.number-like {
+  background-color: #7DB54F;
+  border-radius: 10px;
+  color: #ffffff;
+  line-height: 10px;
+  font-size: 10px;
+}
 
-.link-button a {
+.link-button {
   background-color: #756157;
   color: #ffffff;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .index-main {
@@ -53,7 +65,7 @@ body {
   background-color: #000000;
   background-image: url(../images/background/mountains.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 
@@ -89,30 +101,35 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-item:nth-child(1) {
+.advantages-item {
+  list-style-type: none;
+}
+
+.town {
   background-color: #82b3d3;
   color: #ffffff;
 }
 
-.advantages-item:nth-child(3) {
+.square {
   background-color: rgba(131, 179, 211, 0.12);
   color: rgba(0, 0, 0, 1);
 }
 
-.advantages-item:nth-child(4) {
+.road {
   background-color: rgba(131, 179, 211, 0.2);
   color: rgba(0, 0, 0, 1);
 }
 
-.advantages-item:nth-child(5) {
+.tourists {
   background-color: rgba(131, 179, 211, 0.12);
   color: rgba(0, 0, 0, 1);
 }
 
-.advantages-item:nth-child(7) {
-  background-color: rgba(130, 179, 211, 1);
-  color: rgba(0, 0, 0, 1);
+.devil {
+  background-color: #82b3d3;
+  color: #ffffff;
 }
+
 
 .comfort {
   background-color: #ffffff;
@@ -124,10 +141,15 @@ body {
 
 }
 
-.comfort h2 {
+.comfort-list {
+  list-style-type: none;
+}
+
+.comfort-title {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .comfort-promo {
@@ -135,13 +157,14 @@ body {
   font-size: 22px;
 }
 
-.comfort-title {
+.comfort-item-title {
   line-height: 24px;
   font-size: 28px;
   color: #000000;
+  text-transform: uppercase;
 }
 
-.comfort-item:nth-child(1) {
+.hotels {
   background-color:rgba(131, 179, 211, 0.12);
   color: #333333;
   background-image: url(../images/icons/hotels.svg);
@@ -149,7 +172,7 @@ body {
   background-position: top;
 }
 
-.comfort-item:nth-child(2) {
+.food {
   background-image: url(../images/icons/food.svg);
   background-repeat: no-repeat;
   background-position: top;
@@ -157,7 +180,7 @@ body {
   color: #333333;
 }
 
-.comfort-item:nth-child(3) {
+.gift {
   background-color:rgba(131, 179, 211, 0.12);
   color: #333333;
   background-image: url(../images/icons/gift.svg);
@@ -174,7 +197,7 @@ body {
 
 }
 
-.search-hotel h2 {
+.search-hotel-title {
   color: #000000;
   text-transform: uppercase;
   font-size: 30px;
@@ -194,7 +217,7 @@ body {
 .mail {
   background-image: url(../images/background/back-canyon.jpg);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   color: #ffffff;
   background-color: #000000;
   line-height: 26px;
@@ -202,7 +225,7 @@ body {
   text-align: center;
 }
 
-.mail h2 {
+.mail-title {
   line-height: 36px;
   font-size: 30px;
   text-transform: uppercase;
@@ -213,6 +236,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
+  font-family: inherit;
 }
 
 .spam-button {
@@ -229,22 +253,30 @@ body {
 
 }
 
+.social-list {
+  list-style-type: none;
+
+}
+
 .social-item {
   background-color: #ffffff;
   color: #000000;
   background-repeat: no-repeat;
 }
 
-.social-item:nth-child(1) {
+.vk {
   background-image: url(../images/icons/vk.svg);
+  background-repeat: no-repeat;
 }
 
-.social-item:nth-child(2) {
+.tg {
+  background-repeat: no-repeat;
   background-image: url(../images/icons/telegram.svg);
 }
 
-.social-item:nth-child(3) {
+.youtube {
   background-image: url(../images/icons/youtube.svg);
+  background-repeat: no-repeat;
 }
 
 .phone {
@@ -257,3 +289,65 @@ body {
 .social-item-link {
   text-decoration: none;
 }
+
+/* catalog.html */
+
+.hotels-sedon {
+ background-image: url(../images/background/mountains2.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ color:#ffffff;
+
+}
+
+.heading {
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+  */ Как разметить домик и стрелку */
+
+
+  .catalog-list-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+    .control {
+      line-height: 23px;
+    }
+
+    .from-price {
+      line-height: 24px;
+    }
+
+    .number {
+      font-family: inherit;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .apply-buttom {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #82B3D3;
+      border-style: none;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .off-buttom {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      background-color:
+      border-style: none;
+      border-radius: 4px;
+
+    }
