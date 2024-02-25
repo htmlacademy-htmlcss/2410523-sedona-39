@@ -14,13 +14,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  margin: 0;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
-  ;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100%;
 }
 
 .header-main {
@@ -28,8 +40,24 @@ body {
   background-color: #ffffff;
 }
 
+.navigation {
+  margin: 0 auto;
+  display: flex;
+  width: 1200px;
+
+}
+
+/*прибавил дополнительно 100px в качестве резерв место */
 .navigation-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 439px;
+}
+
+.navigation-user {
+  max-width: 308px;
+  margin-left: auto;
 }
 
 .navigation-item-link {
@@ -59,9 +87,23 @@ body {
   text-transform: uppercase;
 }
 
+.index-page-conteiner {
+  margin: 0 auto;
+  width: 1200px;
+
+}
+
+.main-container {
+  flex-grow: 1;
+
+}
+
+
+
 .index-main {
   background-color: #ffffff;
   color: #000000;
+  margin:0;
 }
 
 .main-welcom {
@@ -69,26 +111,43 @@ body {
   background-image: url(../images/background/mountains.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 1200px;
 }
 
+.hero{
+  display: block;
+  margin: 0 auto;
+}
 
 .main-intro {
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  width: 1200px;
+  padding:0;
 
 }
 
+/* Плывет заголовок */
 .main-intro-title {
   text-transform: uppercase;
   line-height: 36px;
   font-size: 30px;
   text-align: center;
+  padding: 69px 290px 25px ;
+  width: 620px;
 }
+
+
 
 .main-intro-text {
   text-align: center;
   line-height: 26px;
   font-size: 22px;
+  width: 651px;
+  padding-right:275px;
+  padding-left: 275px;
+  padding-bottom: 69px;
 
 }
 
@@ -96,21 +155,45 @@ body {
   text-align: center;
   color: #000000;
   background-color: #ffffff;
+
 }
 
 .advantages-title {
   line-height: 28px;
   font-size: 24px;
   text-transform: uppercase;
+  color:#000000;
+}
+.advantages-list  {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start ;
+  flex-grow: 1;
 }
 
 .advantages-item {
   list-style-type: none;
   color: #333333;
+  width: 400px;
+  margin: 0;
+
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-city-canyon {
+  list-style-type: none;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  display:inline-flex;
 }
 
 .town {
   background-color: #82b3d3;
+
 }
 
 .square {
@@ -137,10 +220,15 @@ body {
   text-align: center;
   line-height: 21px;
   font-size: 18px;
+  width: 1200px;
 }
 
 .comfort-list {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 ;
 }
 
 .comfort-title {
@@ -160,6 +248,11 @@ body {
   font-size: 28px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.comfort-item {
+  width: 400px;
+  height: 385px;
 }
 
 .hotels {
@@ -192,7 +285,8 @@ body {
   text-align: center;
   line-height: 26px;
   font-size: 22px;
-
+  min-width: 592px;
+  margin: 0 auto;
 }
 
 .search-hotel-title {
@@ -223,6 +317,12 @@ body {
   line-height: 26px;
   font-size: 22px;
   text-align: center;
+  width: 1200px;
+}
+
+.mailing {
+  min-width: 684px;
+  margin: 0 auto;
 }
 
 .mail-title {
@@ -256,8 +356,18 @@ body {
 
 }
 
+.footer-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
 .social-list {
   list-style-type: none;
+  width: 140px;
+  display: flex;
+  margin-right: 42px;
 
 }
 
@@ -287,26 +397,60 @@ body {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
+  width: 720px;
+  margin-right: 42px ;
 }
 
 .social-item-link {
   text-decoration: none;
 }
 
+.logo-html-link {
+  min-width: 115px;
+  margin-left: auto;
+}
+
 /* catalog.html */
+
 
 .hotels-sedon {
   background-image: url(../images/background/mountains2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 
+}
+
+.filter-container {
+  min-width: 1060px;
+  background-image: none;
+  margin: 0 auto;
 }
 
 .heading {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+}
+
+.catalog-list-usability {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border-style: none;
+
+}
+
+.catalog-list-hotel {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border-style: none;
 }
 
 
@@ -358,23 +502,52 @@ body {
 .found-hotel {
   background-color: #ffffff;
   color: #000000;
+  width: 1200px;
+}
+
+.found-hotel-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .found-hotel-title {
   line-height: 36px;
   font-size: 30px;
   text-transform: uppercase;
-  color: #333333;
+  color: #000000;
+  width: 400px;
+  margin-right: 200px ;
+
 }
 
-.soting {
+.sorting {
   font-family: inherit;
   color: #333333;
   background-color: #ffffff;
   line-height: 21px;
   font-size: 18px;
   font-weight: 400;
+  width: 292px;
+  margin-right: 70px;
+}
 
+.show {
+  width: 160px;
+  margin-right: 8px; ;
+}
+
+.hotel-list-preview {
+  list-style-type: none;
+  width: 1060px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: space-between;
+}
+
+.hotel-item {
+  border: #E6E6E6 1px solid;
+  width: 340px;
 }
 
 .pin {
@@ -469,37 +642,81 @@ body {
 
 .page-list {
   list-style: none;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-.page-link {
+.page-item {
+  width: 60px;
+  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   background-color: #82B3D3;
   color: #ffffff;
-  text-decoration: none;
   border-radius: 4px;
   font-family: inherit;
+}
+
+.page-item a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .page-current {
   color: #000000;
   background-color: #F2F2F2;
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 4px;
+  font-family: inherit;
 }
 
 .mail-catalog {
   background-image: none;
   background-color: #ffffff;
   color: #000000;
+  margin: 0 auto;
 
+}
+
+.mail-title-catalog {
+  color: #000000;
+  font-size:30px;
+  line-height:36px;
+  margin: 0 auto;
+  min-width: 404px;
 }
 
 .mail-catalog p {
   color: #333333;
+  min-width: 475px;
+  margin: 0 auto;
 }
 
-.mail-catalog .spam-button {
+
+.spam-button {
   border-style: none;
   color: #ffffff;
+  width: 232px;
+  margin: 0;
+}
+
+.mail-spam {
+  font-family: inherit;
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #000000;
+  width: 684px;
+  margin: 0 auto;
 }
