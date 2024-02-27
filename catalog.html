@@ -26,18 +26,18 @@
         </ul>
 
         <ul class="navigation-list navigation-list-users">
-          <li class="navigation-item">
+          <li class="navigation-item users">
             <a class="navigation-item-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item users">
             <a class="navigation-item-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="number-like">12</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item users">
             <a class="link-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -45,22 +45,29 @@
     </header>
     <main class="page-catalog main-container">
       <section class="hotels-sedon">
-        <h1 class="heading">Гостиницы Седоны</h1>
-        <span class="home-hotel">Гостиницы</span>
         <div class="filter-container">
+          <h1 class="heading">Гостиницы Седоны</h1>
+          <!--хлебные крошки
+          <ul class="home-hotel-list">
+            <span class="home-hotel">Гостиницы</span>
+          </ul>-->
+
+
           <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="catalog-list-usability">
-              <legend class="catalog-list-title">Инфраструктура:</legend>
+            <div class="container-usability">
+              <fieldset class="catalog-list-usability">
+                <legend class="catalog-list-title">Инфраструктура:</legend>
 
-              <input class="catalog-input" type="checkbox" name="swiming-pool" id="pool" checked>
-              <label class="control" for="pool"> Бассейн</label>
+                <input class="catalog-input" type="checkbox" name="swiming-pool" id="pool" checked>
+                <label class="control" for="pool"> Бассейн</label>
 
-              <input class="catalog-input" type="checkbox" name="parking-space" id="parking" checked>
-              <label class="control" for="parking"> Парковка </label>
+                <input class="catalog-input" type="checkbox" name="parking-space" id="parking" checked>
+                <label class="control" for="parking"> Парковка </label>
 
-              <input class="catalog-input" type="checkbox" name="network" id="netwoking">
-              <label class="control" for="netwoking"> Wi-Fi </label>
-            </fieldset>
+                <input class="catalog-input" type="checkbox" name="network" id="netwoking">
+                <label class="control" for="netwoking"> Wi-Fi </label>
+              </fieldset>
+            </div>
             <fieldset class="catalog-list-hotel">
               <legend class="catalog-list-title">Жилье:</legend>
 
