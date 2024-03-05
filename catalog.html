@@ -48,8 +48,10 @@
           <h1 class="heading">Гостиницы Седоны</h1>
           <ul class="home-hotel-list">
             <li class="home-hotel-item">
-              <a class="page-in-home"></a>
-                <span class="home-hotel">Гостиницы</span>
+              <a href="index.html" class="page-in-home"></a>
+            </li>
+            <li class="home-hotel">
+              <a class="home-hotel-item">Гостиницы</a>
             </li>
           </ul>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
@@ -112,6 +114,7 @@
       </section>
       <section class="found-hotel">
         <div class="found-hotel-container">
+          <p class="found-heading">
           <h2 class="found-hotel-title"> Найдено гостиниц: 38</h2>
           <select class="sorting" name="sorting-price">
             <option selected="selected" value="sorting-price-cheap">Сначала дешевые</option>
@@ -119,15 +122,17 @@
             <option value="sorting-price-recommend">Рекомендуем</option>
             <option value="sorting-price-rating">Рейтинг</option>
           </select>
-          <a class="show pin show-active" href="#">
-            <span class="visually-hidden ">Показать значки</span>
-          </a>
-          <a class="show list" href="#">
-            <span class="visually-hidden">Показать список </span>
-          </a>
-          <a class="show content" href="#">
-            <span class="visually-hidden ">Показать содержимое</span>
-          </a>
+          <div class="show-visually">
+            <a class="show pin show-active" href="#">
+              <span class="visually-hidden ">Показать значки</span>
+            </a>
+            <a class="show list" href="#">
+              <span class="visually-hidden">Показать список </span>
+            </a>
+            <a class="show content" href="#">
+              <span class="visually-hidden ">Показать содержимое</span>
+            </a>
+          </p>
           </div>
           <ul class="hotel-list-preview">
             <li class="hotel-item">
@@ -233,6 +238,7 @@
               <a href="#">10</a>
             </li>
           </ul>
+        </div>
       </section>
       <section class="mail mail-catalog">
         <h2 class="mail-title-catalog">Подпишись на рассылку</h2>
