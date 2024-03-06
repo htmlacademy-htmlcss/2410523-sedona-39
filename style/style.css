@@ -340,7 +340,8 @@ body {
   color: #333333;
   background-image: url(../images/icons/hotels.svg);
   background-repeat: no-repeat;
-  background-position: top
+  background-position-x: center;
+  background-position-y: top;
 
 
 }
@@ -735,7 +736,6 @@ flex-direction:row;
 
 .found-hotel-container {
   display: flex;
-  flex-direction: column;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -764,7 +764,7 @@ flex-direction:row;
   border-color: #E5E5E5;
   border-radius: 4px;
   display: block;
-
+  margin: 0 auto;
 }
 
 .show-visually {
@@ -944,6 +944,8 @@ justify-content: space-between;
   min-width: 400px;
   display: flex;
   gap:8px;
+  flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .page-item,
@@ -990,7 +992,7 @@ justify-content: space-between;
   font-size:30px;
   line-height:36px;
   margin: 0 auto;
-  min-width: 404px;
+  width: 404px;
 }
 
 .mail-catalog p {
