@@ -80,6 +80,7 @@ body {
   margin-bottom: 0;
   padding-left: 0;
   margin-left: 168px;
+  position: relative;
 }
 
 .navigation-item-link {
@@ -92,7 +93,28 @@ body {
   padding: 20px 16px;
   display: block;
   text-align: center;
+}
 
+.navigation-item-link:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+
+
+.navigation-item-link:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.navigation-item-link:active {
+  color:  rgba(117, 97, 87, 0.3);
+}
+
+.active-color::before {
+  position: absolute;
+  border: 2px solid rgba(117, 98, 87, 1);
+  content: "";
+  width: 68px;
+  bottom: 0;
 }
 
 .navigation-list-users {
@@ -104,7 +126,11 @@ body {
   font-size: 20px;
   font-family: inherit;
   margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
+
+
 
 .navigation-users {
   height: 64px;
@@ -116,11 +142,51 @@ body {
 }
 
 .search {
-  background-image: url(../images/icons/search.svg);
+  color: #000000;
+}
+
+.search:hover {
+  color: #756157;
+}
+
+.search:active {
+ color: rgba(117, 97, 87, 0.3);
+}
+
+.search:focus {
+  color: #756157;
 }
 
 .like {
-  background-image: url(../images/icons/like.svg);
+  color: #000000;
+}
+
+.like:hover {
+  color: #756157;
+}
+
+.like:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.like:focus {
+  color: #756157;
+}
+
+/* Допустимо ли значение margin-left= -10px для сдвига зеленного лайка? */
+.number-like {
+  line-height: 10px;
+  font-size: 10px;
+  background-color: #7DB54F;
+  color: #ffffff;
+  top:11px;
+  margin-left: -10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .link-button {
@@ -131,15 +197,30 @@ body {
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 34px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 14px;
+  margin-left: 20px;
 }
 
-.number-like {
-  line-height: 10px;
-  font-size: 10px;
-  background-color: #7DB54F;
-  color: #ffffff;
-  border-radius: 4px;
+.link-button:hover {
+  background-color: rgba(97, 80, 72, 1);
+
 }
+.link-button:active {
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.link-button:focus {
+background-color: rgba(97, 80, 72, 1);
+}
+
+.link-button:disabled {
+background: rgba(229, 229, 229, 1);
+}
+
+
 
 /*основное содержание */
 
@@ -157,9 +238,10 @@ body {
 
 .main-welcom {
   background-color: #f2f2f2;
-  background-image: url(../images/background/mountains.jpg);
+  background-image: url(../images/background/mountains.jpg), url(../images/background/arnament.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #000000;
   display: block;
   padding: 51px 371px 82px;
 }
@@ -231,6 +313,23 @@ body {
 
 }
 
+.advantages-title::after {
+  width: 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  content: "";
+  margin-top: 30px;
+  margin-left: 85px;
+  display: block;
+}
+.title-blue::after {
+  width: 60px;
+  border-bottom: 2px solid  rgba(255, 255, 255, 0.3);
+  content: "";
+  margin-top: 30px;
+  margin-left: 85px;
+  display: block;
+}
+
 .advantages-item p {
   margin-bottom: 0;
   margin-top: 30px;
@@ -294,7 +393,6 @@ body {
   text-align: center;
   line-height: 21px;
   font-size: 18px;
-
 }
 .container-comfort-promo {
   padding: 64px 310px;
@@ -320,6 +418,7 @@ body {
   grid-template-columns: repeat(3, 400px);
   padding-left: 0 ;
   margin-top:0 ;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -377,6 +476,7 @@ body {
   font-size: 22px;
   min-width: 592px;
   padding: 96px 304px;
+  margin-top: 0;
 }
 
 
@@ -400,8 +500,21 @@ body {
   font-weight: 700;
   font-family: inherit;
   padding: 8px 50px;
+  cursor: pointer;
 }
 
+.hotel-button:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.hotel-button:active {
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-button:focus {
+  background-color: rgba(97, 80, 72, 1);
+}
 .mail {
   background-image: url(../images/background/back-canyon.jpg);
   background-repeat: no-repeat;
@@ -462,11 +575,26 @@ body {
 
 }
 
+.spam-button:hover {
+  background-color:  rgba(104, 162, 202, 1);
+
+}
+.spam-button:active {
+  color: rgba(255, 255, 255, 1);
+  background-color:  rgba(104, 162, 202, 1);
+
+}
+.spam-button:focus {
+  background-color:  rgba(104, 162, 202, 1);
+}
+
+
+
 .footer-contacts {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
-  padding: 40px 70px 0;
+  padding: 40px 70px 30px;
   display: flex;
   gap: 41px ;
   margin-top: 0;
@@ -478,6 +606,9 @@ body {
   max-width: 150px;
   display: flex;
   margin-right: auto;
+  margin-bottom: 0 ;
+  margin-top: 0;
+  align-items:center;
 }
 .social-item {
   background-repeat: no-repeat;
@@ -489,20 +620,24 @@ body {
 .social-item-link {
   text-decoration: none;
   display: block;
-  width: 40px;
-  height: 47px;
+  width: 47px;
+  height: 40px;
 }
 .vk {
   background-image: url(../images/icons/vk.svg);
   background-repeat: no-repeat;
+  background-position: center;
+
 }
 .tg {
   background-repeat: no-repeat;
   background-image: url(../images/icons/telegram.svg);
+  background-position: center;
 }
 .youtube {
   background-image: url(../images/icons/youtube.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -513,6 +648,8 @@ body {
   line-height: 40px;
   min-width: 331px;
   font-family: inherit;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
 }
 .logo-academy-link {
@@ -773,6 +910,9 @@ flex-direction:row;
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  ;
 }
 
 .show-visually {
