@@ -76,18 +76,27 @@
                 <legend class="catalog-list-title">Инфраструктура:</legend>
                 <ul class="catalog-usability-listing">
                   <li class="catalog-usability-item">
-                    <input class="catalog-input" type="checkbox" name="swiming-pool" id="pool" checked>
-                    <label class="control" for="pool"> Бассейн</label>
+                    <label class="control" for="pool">
+                      <input class="visually-hidden control-input" type="checkbox" name="swiming-pool" id="pool" checked>
+                      <span class="control-square"></span>
+                      <span class="control-label">Бассейн</span>
+                    </label>
                   </li>
 
                   <li class="catalog-usability-item">
-                    <input class="catalog-input" type="checkbox" name="parking-space" id="parking" checked>
-                    <label class="control" for="parking"> Парковка </label>
+                    <label class="control" for="parking">
+                      <input class="visually-hidden control-input" type="checkbox" name="parking-space" id="parking" checked>
+                      <span class="control-square"></span>
+                      <span class="control-label">Парковка</span>
+                    </label>
                   </li>
 
                   <li class="catalog-usability-item">
-                    <input class="catalog-input" type="checkbox" name="network" id="netwoking">
-                    <label class="control" for="netwoking"> Wi-Fi </label>
+                    <label class="control" for="netwoking">
+                      <input class="visually-hidden control-input" type="checkbox" name="network" id="netwoking">
+                      <span class="control-square"></span>
+                      <span class="control-label">Wi-Fi</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -96,16 +105,25 @@
                 <legend class="catalog-list-title">Тип Жилья:</legend>
                 <ul class=" catalog-hotel-listing">
                   <li class="hotel-listing-item">
-                    <input class="catalog-input" type="radio" name="hous" value="hotel-housing" id="hotel" checked>
-                    <label class="control" for="hotel">Гостиница</label>
+                    <label class="control" for="hotel" >
+                      <input class="visually-hidden  control-input"  disabled type="radio" name="hous" value="hotel-housing" id="hotel" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
+                    </label>
                   </li>
                   <li class="hotel-listing-item">
-                    <input class="catalog-input" type="radio" name="hous" value="motel-housing" id="motel">
-                    <label class="control" for="motel"> Мотель </label>
+                    <label class="control" for="motel">
+                      <input class="visually-hidden control-input" type="radio" name="hous" value="motel-housing" id="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
+                    </label>
                   </li>
                   <li class="hotel-listing-item">
-                    <input class="catalog-input" type="radio" name="hous" value="apartments-housing" id="apartments">
-                    <label class="control" for="apartments">Апартаменты</label>
+                    <label class="control" for="apartments">
+                      <input class="visually-hidden control-input" type="radio" name="hous" value="apartments-housing" id="apartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
+                    </label>
                   </li>
               </fieldset>
               <fieldset class="catalog-list-price">
@@ -119,11 +137,25 @@
                     <input class="price-item-number rad-right" type="number" value="9000" name="money" id="before">
                     <label class="from-price" for="before">до</label>
                   </li>
+
+                  </li>
                   <li class="buttom">
                     <button class="apply-button" type="submit">Применить</button>
                     <button class="off-button" type="reset">Сбросить</button>
                   </li>
                 </ul>
+                <div class="range">
+                  <div class="range-streak">
+                    <div class="range-streak-color" style="left:0; width:226px ">
+                      <button class="range-button-min range-colors" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-button-max range-colors" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
             </div>
           </form>
