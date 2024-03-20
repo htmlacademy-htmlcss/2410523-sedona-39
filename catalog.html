@@ -69,6 +69,7 @@
             <li class="home-hotel-item">
               <a class="home-hotel">Гостиницы</a>
             </li>
+
           </ul>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
             <div class="container-usability">
@@ -106,7 +107,7 @@
                 <ul class=" catalog-hotel-listing">
                   <li class="hotel-listing-item">
                     <label class="control" for="hotel" >
-                      <input class="visually-hidden  control-input"  disabled type="radio" name="hous" value="hotel-housing" id="hotel" checked>
+                      <input class="visually-hidden  control-input"   type="radio" name="hous" value="hotel-housing" id="hotel" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
@@ -128,35 +129,33 @@
               </fieldset>
               <fieldset class="catalog-list-price">
                 <legend class="catalog-list-title"> Стоимость, ₽:</legend>
-                <ul class="catalog-price">
-                  <li class="price-item">
-                    <input class="price-item-number rad-left" type="number" value="0" name="money" id="from">
-                    <label class="from-price" for="from">от</label>
-                  </li>
-                  <li class="price-item">
-                    <input class="price-item-number rad-right" type="number" value="9000" name="money" id="before">
+                <div class="catalog-price">
+                  <div class="price-item">
+                     <label class="from-price" for="from">от</label>
+                      <input class="price-item-number rad-left" type="number" value="0" name="money" id="from">
+                  </div>
+                  <div class="price-item">
                     <label class="from-price" for="before">до</label>
-                  </li>
-
-                  </li>
-                  <li class="buttom">
-                    <button class="apply-button" type="submit">Применить</button>
-                    <button class="off-button" type="reset">Сбросить</button>
-                  </li>
-                </ul>
-                <div class="range">
-                  <div class="range-streak">
-                    <div class="range-streak-color" style="left:0; width:226px ">
-                      <button class="range-button-min range-colors" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену</span>
-                      </button>
-                      <button class="range-button-max range-colors" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену</span>
-                      </button>
-                    </div>
+                      <input class="price-item-number rad-right" type="number" value="9000" name="money" id="before">
                   </div>
                 </div>
-              </fieldset>
+                <div class="range">
+                  <div class="range-streak">
+                     <div class="range-streak-color" style="left:0; width:226px ">
+                        <button class="range-button-min range-colors" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="range-button-max range-colors" type="button">
+                           <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                  </div>
+                </div>
+             </fieldset>
+              <div class="buttom">
+                <button class="apply-button" type="submit">Применить</button>
+                <button class="off-button" type="reset">Сбросить</button>
+              </div>
             </div>
           </form>
         </section>
