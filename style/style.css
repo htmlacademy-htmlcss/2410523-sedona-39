@@ -1690,11 +1690,14 @@ justify-content: space-between;
 }
 
 .help-kids {
+  display: block;
+  cursor: help;
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: none;
   background-color: #82b3d3;
+  position: relative;
 }
 
 .modal-button-search {
@@ -1708,4 +1711,42 @@ justify-content: space-between;
   font-size: 20px;
   line-height: 24px;
   border-radius: 10px;
+}
+
+
+.wrapper-tooltip {
+  width: 19px;
+  height: 9px;
+  background-color: #333333;
+  display: block;
+  position: absolute;
+  top: 40px
+}
+
+.tooltip::after {
+  width: 256px;
+  min-height: 143px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  content: attr(data-tooltip);
+  /*visibility: hidden;
+  opacity: 0;*/
+  display: block;
+  background-color: #333333;
+  color: #ffffff;
+  position: absolute;
+  left: -128px;
+  top: 30px;
+  text-align: center;
+  padding: 15px 18px 18px 22px;
+}
+
+
+.tooltip:hover::after {
+opacity: 1;
+visibility: visible;
+display: block;
 }
