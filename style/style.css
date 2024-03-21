@@ -1571,3 +1571,141 @@ justify-content: space-between;
   width: 684px;
   margin: 0 auto;
 }
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  background-color: #FFFFFF;
+  padding: 64px 70px;
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 717px;
+
+}
+
+
+.wrapper-people {
+display: flex;
+margin-left: 0;
+justify-content: space-between;
+
+}
+
+.search-people {
+  width: 242px;
+
+}
+
+.people-label {
+  padding-right: 46px;
+}
+
+.modal-errors,
+.modal-text {
+  font-size: 16px;
+  line-height: 21px;
+  font-family: inherit;
+}
+
+.modal-errors {
+  color: #FF5757;
+  grid-column: 2/3;
+}
+
+.modal-text {
+  color: #333333;
+  grid-column: 2/3;
+}
+
+.modal-close {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: #F2F2F2;
+  position: absolute;
+  left: 613px;
+  top: 64px;
+  background-image: url(../images/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.modal-title {
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #000000;
+}
+
+.field {
+  width: 440px;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.modal-form {
+
+}
+
+.search-group {
+  display: grid;
+  grid-template-columns: 137px 440px;
+}
+
+.modal-label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  align-self: center;
+}
+
+.old-people,
+.kids-people {
+  width: 110px;
+}
+
+.help-kids {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background-color: #82b3d3;
+}
+
+.modal-button-search {
+  background-color: #82b3d3;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  width: 577px;
+  padding: 18px 77px;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 10px;
+}

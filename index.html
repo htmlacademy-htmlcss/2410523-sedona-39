@@ -187,6 +187,47 @@
         </a>
       </footer>
     </div>
+
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть страницу</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="modal-form " action="https://echo.htmlacademy.ru/" method="post">
+            <p class="search-group">
+              <label class="modal-label" for="chek-date"> Дата заезда:</label>
+              <input class="field search-field" type="datetime" id="chek-date" name="chek-date" value="27 апреля 2020">
+              <span class="modal-errors">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="search-group">
+              <label class="modal-label" for="chek-date-out"> Дата Выезда:</label>
+              <input class=" field search-field" type="datetime" id="chek-date-out" name="chek-date-out" value="1 сентября 2021">
+              <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <div class="wrapper-people">
+            <p class="search-people">
+              <label class="modal-label people-label" for="chek-date-people"> Взрослые:</label>
+              <input class="field old-people" type="number" id="chek-date-people" name="chek-date-people">
+            </p>
+
+            <p class="search-people">
+              <label class="modal-label people-label" for="chek-date-kids">
+                Дети: <button class="help-kids" title="Укажите количество детей, которые будут с вами,
+                 возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</button>
+              </label>
+              <input class="field kids-people" type="number" id="chek-date-kids" name="chek-date-kids">
+            </p>
+          </div>
+            <button class="modal-button-search" type="submit">Найти</button>
+
+          </form>
+        </section>
+      </div>
+
+    </div>
   </body>
 
 </html>
