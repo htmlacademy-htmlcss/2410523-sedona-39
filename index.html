@@ -198,7 +198,7 @@
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
           <form class="modal-form " action="https://echo.htmlacademy.ru/" method="post">
             <p class="search-group">
-              <label class="modal-label" for="chek-date"> Дата заезда:</label>
+              <label class="modal-label" for="chek-date"> Дата Заезда:</label>
               <input class="field search-field" type="datetime" id="chek-date" required placeholder="Укажите дату" name="chek-date" value="27 апреля 2020">
               <span class="modal-errors">Мы не можем отправить вас в прошлое.</span>
             </p>
@@ -210,24 +210,27 @@
             <div class="wrapper-people">
             <p class="search-people">
               <label class="modal-label people-label" for="chek-date-people"> Взрослые:</label>
-              <button class="but-minus">
+              <button class="but-minus" type="button">
                 <span class="visually-hidden">Убавить количество взрослых</span>
               </button>
               <input class="old-people" type="number" value="2" id="chek-date-people" name="chek-date-people" >
-              <button class="but-plus">
+              <button class="but-plus" type="button">
                 <span class="visually-hidden"> Прибавить количество взрослых</span>
               </button>
             </p>
             <p class="search-people">
               <label class="modal-label people-label-kids" for="chek-date-kids">Дети:</label>
-              <button class="help-kids">
-              <span class="tooltip" data-tooltip="Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."></span>
+
+              <span class="wrapper-tooltip">
+              <button class="help-kids" type="button"><span class="visually-hidden">Подсказка</span>
               </button>
-                <button class="but-minus">
+              <span class="tooltip">Укажите количество детей, которые будут с вами,возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+                <button class="but-minus" type="button">
                   <span class="visually-hidden">Убавить количество детей</span>
                 </button>
                 <input class="kids-people" type="number" min="0"  value="2" id="chek-date-kids" name="chek-date-kids">
-                <button class="but-plus">
+                <button class="but-plus" type="button">
                   <span class="visually-hidden"> Прибавить количество детей</span>
                 </button>
             </p>
