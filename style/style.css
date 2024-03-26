@@ -902,7 +902,7 @@ cursor: pointer;
   position: absolute;
 }
 
-.control:has(input):focus + .control-mark {
+.control:has(.control-input):focus + .control-mark {
   border-color: #814b18;
 }
 
