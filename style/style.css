@@ -945,7 +945,7 @@ cursor: pointer;
 }
 
 
-.control:has(input):hover {
+.control:has(.control-input):hover {
   opacity: 0.5;
 }
 
@@ -955,8 +955,8 @@ cursor: pointer;
 }
 
 
-.control:has(input):active,
-.control:has(input):disabled {
+.control:has(.control-input):active,
+.control:has(.control-input):disabled {
   opacity: 0.3;
 }
 
