@@ -667,11 +667,9 @@ outline: 3px solid #83B3D3;
   background-color: #ffffff;
   color: #000000;
   text-align: center;
-  padding: 41px 70px 31px 71px;
+  padding: 40px 70px 31px 71px;
   display: flex;
-  gap: 41px ;
-  margin-top: 0;
-  margin-bottom: 0;
+
 }
 
 .social-list {
@@ -989,6 +987,7 @@ min-width: 288px;
 border: none;
 padding: 0;
 cursor: pointer;
+padding-left: 5px;
 }
 
 .catalog-price {
@@ -1024,7 +1023,7 @@ position: relative;
   line-height: 24px;
   font-size: 18px;
   border-style: none;
-  padding: 20px 12px;
+  padding: 20px 19px;
 
 }
 
@@ -1138,7 +1137,7 @@ position: relative;
   background-color: #aaa6a6;
   position: relative;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 7px;
 }
 
 .range-streak-color {
@@ -1151,7 +1150,7 @@ position: relative;
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 0;
   cursor: pointer;
   border-radius: 5px;
@@ -1162,8 +1161,8 @@ position: relative;
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -9px;
-  right: 0;
+  top: -8px;
+  right: -2px;
   cursor: pointer;
   border-radius: 5px;
   border: none;
@@ -1201,7 +1200,7 @@ outline: 3px solid #83B3D3;
   color: #000000;
   max-width: 450px;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
   display: block;
 }
@@ -1218,7 +1217,9 @@ outline: 3px solid #83B3D3;
   border-color: #E5E5E5;
   border-radius: 4px;
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 200px;
+  margin-right: 70px;
   padding-left: 20px;
   padding-right: 20px;
   border-width: 2px;
@@ -1304,13 +1305,14 @@ border:2px solid #000000;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
+  margin-top: 40px;
 }
 
 .hotel-item {
   box-shadow: 0 0 0 1px #E6E6E6 ;
   width: 340px;
-  padding:20px  ;
+  padding:20px 20px 0 20px;
   display: flex;
   flex-direction: column;
 }
@@ -1337,6 +1339,10 @@ border:2px solid #000000;
 
 .title-link h3 {
   margin-bottom: 0;
+  margin-top: -6px;
+  line-height: 28px;
+  font-size: 24px;
+
 }
 
 .title-link:hover,
@@ -1366,6 +1372,7 @@ border:2px solid #000000;
 .price {
   min-width: 140px;
   text-align: end;
+  margin-left: 20px;
 }
 
 .cards-buttom {
@@ -1458,9 +1465,10 @@ justify-content: space-between;
   border-radius: 4px;
   width: 140px;
   height: 36px;
-  padding: 8px;
+  padding: 7px 4px;
   text-decoration: none;
   border-style: none;
+  text-transform: uppercase;
 
 }
 .stars {
@@ -1575,7 +1583,7 @@ justify-content: space-between;
   font-size:30px;
   line-height:36px;
   min-width: 404px;
-  margin-top: 0;
+  margin-top: -18px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -1619,9 +1627,9 @@ justify-content: space-between;
 }
 
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 
 
@@ -1738,6 +1746,7 @@ justify-content: space-between;
   font-weight: 700;
   position: relative;
   margin-bottom: 4px;
+
 }
 
 
@@ -1980,7 +1989,7 @@ background-position-y: center;
   position: absolute;
   left: -105px;
   top: 53px;
-  padding: 15px 18px 18px 22px;
+  padding: 21px 18px 18px 22px;
 }
 
 .tooltip::before{
