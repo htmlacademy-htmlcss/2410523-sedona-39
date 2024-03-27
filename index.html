@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="images/png" href="images/fa-icons.png" sizes="32x32">
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header-main">
@@ -72,9 +74,7 @@
             <li class="advantages-item town">
               <h3 class="advantages-title title-blue">Настоящий городок</h3>
               <p>Cедона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </li>
-            <li class=" canyon">
-              <img class="advantages-cards" src="images/city.jpg" width="800" height="385" alt="Улица в Седоне">
+              <img class="advantages-cards canyon" src="images/city.jpg" width="800" height="385" alt="Улица в Седоне">
             </li>
             <li class="advantages-item square">
               <h3 class="advantages-title">Небольшая<br>площадь</h3>
@@ -88,9 +88,9 @@
               <h3 class="advantages-title ">Мало<br>туристов</h3>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </li>
-            <li class="canyon-arizon">
+            <span class="canyon-arizon">
               <img class="advantages-cards" src="images/canyon.jpg" width="800" height="385" alt="Каньон в Аризоне">
-            </li>
+            </span>
             <li class="advantages-item devil">
               <h3 class="advantages-title title-blue">Там есть<br> мост дьявола</h3>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -176,8 +176,11 @@
             </a>
           </li>
         </ul>
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="phone-list">
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <a class="logo-academy-link" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Сайт разработчика</span>
           <svg class="logo-html-academy" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
             width="115" height="34" fill="none" viewBox="0 0 115 34">
             <path fill="currentColor" d="M0 13.723v2.6h2.5v-2.6H0ZM11.6 5.323c-1.6 0-2.8.7-3.6 1.7h-.1v-6.2h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6
