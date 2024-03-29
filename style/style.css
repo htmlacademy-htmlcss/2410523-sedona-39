@@ -389,10 +389,12 @@ body {
 
 .square {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
 }
 
 .road {
   background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
 }
 
 .tourists {
